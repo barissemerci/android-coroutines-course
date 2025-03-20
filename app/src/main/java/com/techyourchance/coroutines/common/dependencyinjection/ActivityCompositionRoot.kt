@@ -62,6 +62,8 @@ class ActivityCompositionRoot(
 
     val benchmarkUseCase get() = BenchmarkUseCase()
 
+    val getExerciseReputationUseCase get() = com.techyourchance.coroutines.exercises.exercise5.GetReputationUseCase(getReputationEndpoint)
+
     val cancellableBenchmarkUseCase get() = CancellableBenchmarkUseCase()
 
     val blockingBenchmarkUseCase get() = BlockingBenchmarkUseCase()
